@@ -169,15 +169,15 @@ background-color: rgba(99, 53, 160, 0.4) !important;
   font-weight: bold !important ;
   position: fixed;
   right: 10px; 
-  background:rgba(107, 49, 182, 0.6) !important;
-  border:rgba(133, 61, 228, 0.7) !important;
+  background:rgba(22, 14, 92, 0.616) !important;
+  border:rgba(45, 17, 122, 0.7) !important;
   color: whitesmoke;
 }
 
 
 
 .btnCart_header:hover {
-  background:rgba(107, 49, 182, 0.8) !important;
+  background:rgba(54, 16, 122, 0.8) !important;
 }
 .icons_header_cart{
   font-size: 30px;

@@ -89,7 +89,7 @@ const NewsPanel = () => {
                   <Col className="d-flex justify-content-center text-uppercase text-nowrap mb-2">
                     <h2
                       id="news-title"
-                      className="w-100 text-white d-flex justify-content-center"
+                      className="w-100 text-dark d-flex justify-content-center"
                     >
                       {noticia.titulo}
                     </h2>
@@ -102,10 +102,10 @@ const NewsPanel = () => {
                       src={noticia.imagen}
                     />
                   </Col>
-                  <Col className="text-white text-justify mb-4">
+                  <Col className="text-dark text-justify mb-4">
                     <Row className="d-flex flex-column">
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-white font-weight-bolder">
+                        <h5 className="text-dark font-weight-bolder">
                           Lanzamiento:{" "}
                         </h5>
                         <p className="font-italic">
@@ -113,7 +113,7 @@ const NewsPanel = () => {
                         </p>
                       </Col>
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-white font-weight-bolder">
+                        <h5 className="text-dark font-weight-bolder">
                           Categorías:{" "}
                         </h5>
                         <p className="font-italic">
@@ -127,7 +127,7 @@ const NewsPanel = () => {
                         </p>
                       </Col>
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-white font-weight-bolder">
+                        <h5 className="text-dark font-weight-bolder">
                           Rating:{" "}
                         </h5>
                         <p className="font-italic">
@@ -137,11 +137,11 @@ const NewsPanel = () => {
                       <Col className="d-flex flex-column justify-content-start align-items-center">
                         <Row className="d-flex flex-column justify-content-center align-items-center">
                           <Col className="d-flex justify-content-center">
-                            <h5 className="text-white font-weight-bolder">
+                            <h5 className="text-dark font-weight-bolder">
                               Disponible en:{" "}
                             </h5>
                           </Col>
-                          <Col className="text-white font-weight-lighter font-italic">
+                          <Col className="text-dark font-weight-lighter font-italic">
                             {noticia.descripcion.tiendas.map((tienda) => {
                               return noticia.descripcion.tiendas[
                                 noticia.descripcion.tiendas.length - 1
@@ -199,7 +199,7 @@ const NewsPanel = () => {
                   <Col className="d-flex justify-content-center">
                     <Button
                       id="BtnComprar"
-                      className="w-100 text-white text-uppercase"
+                      className="w-100 text-primary text-uppercase"
                       variant="outline-primary"
                       onClick={() =>
                         window.open(
