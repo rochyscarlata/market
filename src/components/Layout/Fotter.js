@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
-import Loguito from "../Images/Zero-Images/Zero-Tech-Grey.svg";
+import Loguito from "../Images/sagitariologo.png";
 import fbIcon2 from "../assets/icons/facebook2.svg";
 import twIcon from "../assets/icons/twitter.svg";
 import instaIcon from "../assets/icons/instagram.svg";
@@ -23,7 +23,7 @@ const Fotter = () => {
     <Container fluid className="container_footer">
       <Container className="d-flex flex-column justify-content-center">
         <Row className="d-flex flex-column justify-content-center">
-          <Col className="d-flex justify-content-center mb-4">
+          <Col className="d-flex justify-content-center">
             <Row className="footer-section d-flex justify-content-around align-items-center flex-column flex-md-row w-100">
               <Col className="footer-menu-link-container h-100">
                 <Link
@@ -33,7 +33,7 @@ const Fotter = () => {
                   NUESTRA TIENDA
                 </Link>
               </Col>
-              <Col className="footer-menu-link-container h-100">
+              {/* <Col className="footer-menu-link-container h-100">
                 <a
                   className="footer-menu-list-link h-100 text-justify text-center"
                   href={ubicacion}
@@ -42,23 +42,9 @@ const Fotter = () => {
                 >
                   COMO LLEGAR
                 </a>
-              </Col>
-              <Col className="footer-menu-link-container h-100">
-                <Link
-                  className="footer-menu-list-link h-100 text-justify text-center"
-                  to="/service"
-                >
-                  SERVICIOS
-                </Link>
-              </Col>
-              <Col className="footer-menu-link-container h-100">
-                <Link
-                  className="footer-menu-list-link h-100 text-justify text-center"
-                  to="/turn"
-                >
-                  ASISTENCIA ONLINE
-                </Link>
-              </Col>
+              </Col> */}
+              
+             
               <Col className="footer-menu-link-container h-100">
                 <Link
                   className="footer-menu-list-link h-100 text-justify text-center"
@@ -71,43 +57,19 @@ const Fotter = () => {
           </Col>
           <Col className="d-flex justify-content-center mt-4">
             <Row className="footer-section d-flex align-items-center">
-              <Image src={Loguito} rounded className="logo_imagen_header" />
+              <Image src={Loguito}  className="logo_imagen_header" />
             </Row>
           </Col>
-          <Col className="d-flex justify-content-center">
-            <Row className="social-menu footer-section d-flex justify-content-center align-items-center">
-              <Col>
-                <a href="#" className="social-menu-a fb-icon shadow">
-                  <Image
-                    src={fbIcon2}
-                    height="60"
-                    className="media-icon"
-                    rounded
-                  />
-                </a>
-              </Col>
-              <Col>
-                <a href="#" className="social-menu-a tw-icon shadow">
-                  <Image src={twIcon} className="media-icon" rounded />
-                </a>
-              </Col>
-              <Col>
-                <a href="#" className="social-menu-a insta-icon shadow">
-                  <Image src={instaIcon} className="media-icon" rounded />
-                </a>
-              </Col>
-            </Row>
-          </Col>
+          
           <Col className="d-flex justify-content-center mt-4">
             <Row className="footer-section d-flex justify-content-center align-items-center">
               <Col
                 md="8"
                 className="footer-disclaimer text-justify text-center"
               >
-                ZeroTech® ● General Paz 300 ● S.M Tucuman ● 4000 ● Tucuman ●
-                Argentina ● www.zerotechstore.com. Todos los derechos
-                reservados. Prohibida la distribución de los elementos
-                registrados en ZeroTech Inc.
+                Sagitario® ● Suipacha 681 ● S.M Tucuman  ● Tucuman ●
+                Argentina ● www.sagitariomarket.com.● Desarrollado por www.codeandcoffee.com.ar - Todos los derechos
+                reservados.
               </Col>
             </Row>
           </Col>
@@ -137,28 +99,28 @@ const Fotter = () => {
                 md="2"
                 className="d-flex justify-content-center h-100"
               >
-                <FaCcVisa className="footer-icono w-100 h-100" />
+                <FaCcVisa className="footer-icono w-100 h-100 text-warning" />
               </Col>
               <Col
                 xs="3"
                 md="2"
                 className="d-flex justify-content-center h-100"
               >
-                <FaCcMastercard className="footer-icono w-100 h-100" />
+                <FaCcMastercard className="footer-icono w-100 h-100 text-danger" />
               </Col>
               <Col
                 xs="3"
                 md="2"
                 className="d-flex justify-content-center h-100"
               >
-                <FaCcAmex className="footer-icono w-100 h-100" />
+                <FaCcAmex className="footer-icono w-100 h-100 text-info" />
               </Col>
               <Col
                 xs="3"
                 md="2"
                 className="d-flex justify-content-center h-100"
               >
-                <FaCcPaypal className="footer-icono w-100 h-100" />
+                <FaCcPaypal className="footer-icono w-100 h-100 text-primary" />
               </Col>
             </Row>
           </Col>
