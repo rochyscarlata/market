@@ -13,7 +13,7 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import "./styles.css";
-import Loguito from "../Images/Zero-Images/Inset/Zero-Tech-White.svg";
+import Loguito from "../Images/sagitariologo.png";
 import { FaUser, FaShareSquare } from "react-icons/fa";
 
 const HeaderStatic = ({ authen, setAuthen, usuario }) => {
@@ -92,12 +92,7 @@ const HeaderStatic = ({ authen, setAuthen, usuario }) => {
                     >
                       TIENDA
                     </Col>
-                    <Col
-                      xs="auto"
-                      className=" d-flex justify-content-center btnNav_secondFont "
-                    >
-                      tech store
-                    </Col>
+                    
                   </Row>
                 </Nav.Link>
 
@@ -110,38 +105,13 @@ const HeaderStatic = ({ authen, setAuthen, usuario }) => {
                       xs="auto"
                       className=" d-flex justify-content-center btnNav_mainFont"
                     >
-                      SERVICIOS
+                      CONTACTO  
                     </Col>
-                    <Col
-                      xs="auto"
-                      className=" d-flex justify-content-center btnNav_secondFont"
-                    >
-                      contactar
-                    </Col>
+                   
                   </Row>
                 </Nav.Link>
 
-                {authen ? (
-                  <Nav.Link
-                    href="/turn"
-                    className="btnNav_header d-flex justify-content-center w-100"
-                  >
-                    <Row className="d-block  align-self-center ">
-                      <Col
-                        xs="auto"
-                        className=" d-flex justify-content-center btnNav_mainFont"
-                      >
-                        TURNO
-                      </Col>
-                      <Col
-                        xs="auto"
-                        className=" d-flex justify-content-center btnNav_secondFont"
-                      >
-                        asistencia
-                      </Col>
-                    </Row>
-                  </Nav.Link>
-                ) : null}
+               
               </Nav>
             </Navbar.Collapse>
 
