@@ -26,6 +26,7 @@ const ShippingDetail = ({ sliderSiguiente, sliderAnterior, setValorEnvio,setDeta
     });
   };
 
+
   const SeleccionarEnvio = (nombreMetodoEnvio, valor) => {
     setValorEnvio(valor);
     setMetodoEnvio(nombreMetodoEnvio);
@@ -230,6 +231,7 @@ const ShippingDetail = ({ sliderSiguiente, sliderAnterior, setValorEnvio,setDeta
                   className="w-25 mr-2 d-flex justify-content-center"
                   variant="secondary"
                   type="submit"
+                
                 >
                   Siguiente
                 </Button>

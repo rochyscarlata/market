@@ -13,7 +13,7 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import "./styles.css";
-import Loguito from "../Images/Zero-Images/Inset/Zero-Tech-White.svg";
+import Sagitario from "../Images/logoSagitario.jpeg";
 import BtnCart from "./BtnCart";
 import {
   FaUser,
@@ -38,13 +38,7 @@ const Header = ({
     history.push("/main");
   };
 
-  // if (userId === undefined) {
-  //   return <HeaderStatic/>;
-  // } else {
-  //   TraerCart();
-  // }
 
-  //se carga el carrito una vez que se actualia el usuario
   useEffect(() => {
     fetchCarrito(userId);
     return () => {
@@ -58,7 +52,7 @@ const Header = ({
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
             <Navbar.Brand href="/main" className="">
-              <Image fluid src={Loguito} className="logo_imagen_header" />
+              <Image fluid src={Sagitario} className="logo_imagen_header" />
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -124,7 +118,7 @@ const Header = ({
                       xs="auto"
                       className=" d-flex justify-content-center btnNav_secondFont "
                     >
-                      tech store
+                      Compras online
                     </Col>
                   </Row>
                 </Nav.Link>
@@ -133,20 +127,7 @@ const Header = ({
                   href="/service"
                   className="btnNav_header d-flex justify-content-center w-100"
                 >
-                  <Row className="d-block  align-self-center ">
-                    <Col
-                      xs="auto"
-                      className=" d-flex justify-content-center btnNav_mainFont"
-                    >
-                      SERVICIOS
-                    </Col>
-                    <Col
-                      xs="auto"
-                      className=" d-flex justify-content-center btnNav_secondFont"
-                    >
-                      contactar
-                    </Col>
-                  </Row>
+                
                 </Nav.Link>
 
                 {authen ? (
@@ -154,20 +135,7 @@ const Header = ({
                     href="/turn"
                     className="btnNav_header d-flex justify-content-center w-100"
                   >
-                    <Row className="d-block  align-self-center ">
-                      <Col
-                        xs="auto"
-                        className=" d-flex justify-content-center btnNav_mainFont"
-                      >
-                        TURNO
-                      </Col>
-                      <Col
-                        xs="auto"
-                        className=" d-flex justify-content-center btnNav_secondFont"
-                      >
-                        asistencia
-                      </Col>
-                    </Row>
+                  
                   </Nav.Link>
                 ) : null}
               </Nav>

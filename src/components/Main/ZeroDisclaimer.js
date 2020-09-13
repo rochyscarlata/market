@@ -25,18 +25,16 @@ const ZeroDisclaimer = () => {
                   xs="auto"
                   className="d-flex justify-content-center justify-content-lg-start"
                 >
-                  <Image src={Loguito} className="disclaimer-panel-logo"/>
+               
                 </Col>
                 <Col className="d-flex justify-content-center justify-content-lg-start align-items-center">
-                  <h1 className="disclaimer-panel-titulo text-justify text-center">GAMING STORE</h1>
+                  <h1 className="disclaimer-panel-titulo text-justify text-center">Sagitario Market</h1>
                 </Col>
               </Row>
             </Col>
             <Col className="disclaimer-line2 d-flex justify-content-center justify-content-lg-start">
               <h3 className="w-75 disclaimer-panel-descripcion mb-5 text-justify text-center text-md-left">
-                Somos una tienda especializada en Gaming. Asesorando, ofreciendo
-                e incitando a las personas a entrar en la industria que más
-                creció en los últimos 10 años.
+               Compras rápido, seguro y desde la comodidad de tu casa !
               </h3>
             </Col>
           </Row>
