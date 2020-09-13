@@ -3,14 +3,14 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import "./styles.css";
 
 import GamePad from "../Images/various-svg/Gamepad-White.svg";
-import Loguito from "../Images/Zero-Images/Inset/Zero-Tech-Dark-Blue.svg";
+import Loguito from "../Images/sagitariologo.png";
 
 const ZeroDisclaimer = () => {
   return (
     <Container
       fluid
       className="main-disclaimer-container d-flex justify-content-center align-items-center"
-    >
+    >   
       <Row className="w-100 d-flex align-items-center justify-content-center justify-content-sm-start">
         <Col
           xs="12"
@@ -34,7 +34,7 @@ const ZeroDisclaimer = () => {
             </Col>
             <Col className="disclaimer-line2 d-flex justify-content-center justify-content-lg-start">
               <h3 className="w-75 disclaimer-panel-descripcion mb-5 text-justify text-center text-md-left">
-               Compras rápido, seguro y desde la comodidad de tu casa !
+                Con Minimarket Sagitario online podes realizar tus compras online, con sólo un click sin moverte de tu casa rapido, simple, y seguro, 
               </h3>
             </Col>
           </Row>
