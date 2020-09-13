@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import Example from './Example'
 import "./NewsPanel.css";
 
 const NewsPanel = () => {
@@ -85,141 +86,69 @@ const NewsPanel = () => {
           <Col className="p-5">
             <Row className="d-flex flex-column">
               <Col className="mb-2">
-                <Row className="d-flex flex-column align-items-center justify-content-center">
+                <Row className="d-flex flex-column align-items-center justify-content-center p-5">
                   <Col className="d-flex justify-content-center text-uppercase text-nowrap mb-2">
-                    <h2
+                    <h3
                       id="news-title"
-                      className="w-100 text-dark d-flex justify-content-center"
-                    >
-                      {noticia.titulo}
-                    </h2>
+                      className=" text-danger d-flex justify-content-center"
+                    > <strong> Información importante</strong>
+                   
+                     
+
+                    </h3>
                   </Col>
                   <Col className="d-flex justify-content-center align-items-center">
-                    <Image
+                    {/* <Image
                       fluid
                       id="news-image-small"
                       className="shadow rounded mb-4"
                       src={noticia.imagen}
-                    />
+                    /> */}
                   </Col>
                   <Col className="text-dark text-justify mb-4">
                     <Row className="d-flex flex-column">
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-dark font-weight-bolder">
-                          Lanzamiento:{" "}
+                        <h5 className="text-dark font-weight">
+                        PRODUCTOS DE VENTA AL PESO <br></br>
+                      Los productos de venta al peso como los fiambres tienen publicado el precio por cada 100 gramos.
+                       Si carga al carrito 3 cantidades estará recibiendo 300 gramos del producto seleccionado.<br></br>
+                      
                         </h5>
-                        <p className="font-italic">
-                          {noticia.descripcion.lanzamiento}
-                        </p>
+                        <h5 className="font-weight">
+                        VENCIMIENTO EN LÁCTEOS <br></br>
+                      Los lácteos poseen fecha de vencimiento de 10 a 15 días, los mismos serán enviados dentro dicho rango.
+                      Cadena de frío en la entrega
+                        </h5>
                       </Col>
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-dark font-weight-bolder">
-                          Categorías:{" "}
+                        <h5 className="text-dark font-weight">
+                        Los alimentos que requieren bajas temperaturas para su conservación son enviados en conservadoras refrigeradas que no cortan la cadena 
+                      de frío.
                         </h5>
-                        <p className="font-italic">
-                          {noticia.descripcion.generos.map((genero) => {
-                            return noticia.descripcion.generos[
-                              noticia.descripcion.generos.length - 1
-                            ] === genero
-                              ? genero + "."
-                              : genero + ", ";
-                          })}
-                        </p>
+                        
+                       <h3 className="text-center text-danger">ZONA DE ENVÍOS <br></br>
+                            entre: Av. Mitre y Av. Soldati
+                            entre: Av. Sarmiento y Av. 24 de Septiembre
+                            </h3>
                       </Col>
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-dark font-weight-bolder">
-                          Rating:{" "}
-                        </h5>
-                        <p className="font-italic">
-                          {noticia.descripcion.rating}
-                        </p>
+                    <Example/>
+                        
                       </Col>
-                      <Col className="d-flex flex-column justify-content-start align-items-center">
-                        <Row className="d-flex flex-column justify-content-center align-items-center">
-                          <Col className="d-flex justify-content-center">
-                            <h5 className="text-dark font-weight-bolder">
-                              Disponible en:{" "}
-                            </h5>
-                          </Col>
-                          <Col className="text-dark font-weight-lighter font-italic">
-                            {noticia.descripcion.tiendas.map((tienda) => {
-                              return noticia.descripcion.tiendas[
-                                noticia.descripcion.tiendas.length - 1
-                              ] === tienda ? (
-                                <a
-                                  href={tienda.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-white"
-                                >
-                                  {tienda.nombre + "."}
-                                </a>
-                              ) : (
-                                <a
-                                  href={tienda.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-white"
-                                >
-                                  {tienda.nombre + ", "}
-                                </a>
-                              );
-                            })}
-                          </Col>
-                        </Row>
-                      </Col>
+                    
                     </Row>
                   </Col>
                 </Row>
               </Col>
-              <Col className="">
-                <Row className="">
-                  <Col className="d-flex justify-content-center">
-                    <Button
-                      id={validandoCompra?"BtnSiguiente-disabled":"BtnSiguiente"}
-                      className="w-100 text-uppercase"
-                      variant="dark"
-                      onClick={() =>
-                        GenerarNumeroAleatorio() || setValidandoCompra(true)
-                      }
-                      disabled={validandoCompra}
-                    >
-                      {validandoCompra ? (
-                        <div
-                          className="spinner-border spinner-border-sm"
-                          role="status"
-                        >
-                          <span className="sr-only">Loading...</span>
-                        </div>
-                      ) : (
-                        "Siguiente"
-                      )}
-                    </Button>
-                  </Col>
-                  <Col className="d-flex justify-content-center">
-                    <Button
-                      id="BtnComprar"
-                      className="w-100 text-primary text-uppercase"
-                      variant="outline-primary"
-                      onClick={() =>
-                        window.open(
-                          noticia.descripcion.tiendas[0].url,
-                          "_blank"
-                        )
-                      }
-                    >
-                      Comprar!
-                    </Button>
-                  </Col>
-                </Row>
-              </Col>
+             
             </Row>
           </Col>
-          <Col className="p-5 d-flex align-items-start justify-content-center">
+          {/* <Col className="p-5 d-flex align-items-start justify-content-center">
             <Row id="news-image-container" className="shadow rounded">
-              <Image id="news-image" src={noticia.imagen} />
+             
+          <iframe src="https://www.google.com.ar/intl/es/about/products"></iframe>
             </Row>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

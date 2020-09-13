@@ -16,6 +16,7 @@ import PrivateRoute from "./components/routes/PrivateRoute";
 import RestrictedRoutes from "./components/routes/RestrictedRoutes";
 import PrivateAdmin from "./components/routes/PrivateAdmin";
 import PaginaCompra from "./components/PaginaDePago/PaginaCompra";
+import FormuDirec from "./components/FormuDirec/FormuDirec"
 
 function App() {
   const token = localStorage.getItem("Token");
@@ -99,6 +100,9 @@ function App() {
         </Route>
         <Route path="/Compra">
           <PaginaCompra />
+        </Route>
+        <Route path="/formuCompra">
+          <FormuDirec />
         </Route>
         <PrivateRoute exact path="/perfil">
           <PerfilUsuario
