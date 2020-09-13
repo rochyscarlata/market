@@ -13,7 +13,7 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import "./styles.css";
-import Loguito from "../Images/iconosuper.png";
+
 import BtnCart from "./BtnCart";
 import {
   FaUser,
@@ -58,7 +58,7 @@ const Header = ({
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
             <Navbar.Brand href="/main" className="">
-              <Image fluid src={Loguito} className="logo_imagen_header" />
+            <i class="fas fa-shopping-cart fa-2x"></i>
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

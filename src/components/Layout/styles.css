@@ -386,6 +386,9 @@ background-color: rgba(99, 53, 160, 0.4) !important;
   .btnCartOpen{
     width: 90%;  
   }
+ .fa-shopping-cart{
+ font-size: large !important;
+ }
 }
 
 @media (max-width: 340px) {
