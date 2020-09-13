@@ -193,31 +193,7 @@ const ShippingDetail = ({ sliderSiguiente, sliderAnterior, setValorEnvio,setDeta
                 </Row>
               </Col>
 
-              <Col className="mt-4 mb-5">
-                <Row className="d-flex justify-content-between">
-                  <Col>
-                    <CardOpcion
-                      onClick={() => SeleccionarEnvio("EnvioGratis", 0)}
-                      seleccionado={
-                        metodoEnvio === "EnvioGratis" ? true : false
-                      }
-                      titulo="Envío Gratis"
-                      descripcion="Demora entre 2 y 5 días hábiles"
-                    />
-                  </Col>
-
-                  <Col>
-                    <CardOpcion
-                      onClick={() => SeleccionarEnvio("EnvioNextDay", 450)}
-                      seleccionado={
-                        metodoEnvio === "EnvioNextDay" ? true : false
-                      }
-                      titulo='Envío "Next Day" - $450'
-                      descripcion="Entrega en 24 horas"
-                    />
-                  </Col>
-                </Row>
-              </Col>
+             
 
               <Col className="mb-4 d-flex justify-content-start align-items-center">
                 <Button

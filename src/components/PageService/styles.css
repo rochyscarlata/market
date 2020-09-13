@@ -59,7 +59,12 @@
 .persona:hover ~ .nombre-imagen {
   color: rgb(46, 46, 46) !important;
 }
-
+.mapa{
+  width:"800";
+   height:"600";
+  border:0;
+  
+}
 @media (max-width: 991px) {
   .nombre-imagen {
     font-size: 1.1rem !important;

@@ -65,7 +65,9 @@ body {
   background-color: #212121 !important;
   color: whitesmoke;
 }
-
+.line1-logo{
+  height: 150px;
+}
 .container-fluid {
   padding-right: 0% !important;
   padding-left: 0% !important;

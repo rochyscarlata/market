@@ -25,7 +25,7 @@ const ZeroDisclaimer = () => {
                   xs="auto"
                   className="d-flex justify-content-center justify-content-lg-start"
                 >
-               
+              <Image src={Loguito} className="line1-logo" />
                 </Col>
                 <Col className="d-flex justify-content-center justify-content-lg-start align-items-center">
                   <h1 className="disclaimer-panel-titulo text-justify text-center">Sagitario Market</h1>

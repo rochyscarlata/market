@@ -5,7 +5,7 @@ import Rochy from "../Images/rochy.png";
 import Sergio from "../Images/sergio.png";
 import Nicole from "../Images/nicole1.jpeg";
 import Mauricio from "../Images/mauricio.png";
-import Loguito from "../Images/Zero-Images/Zero-Tech-Purple.svg";
+import Loguito from "../Images/sagitariologo.png";
 import HeaderStatic from "../Layout/HeaderStatic";
 import Footer from "../Layout/Fotter";
 // stilos de register
@@ -22,7 +22,7 @@ const PageService = ({ authen, setAuthen, usuario }) => {
 
         <Container className="main-container-service shadow p-3 mt-4 mb-4 d-flex flex-column justify-content-center">
           <div className="w-100 d-flex justify-content-center mt-5">
-          <Image fluid src={Loguito} className="w-50"/>
+          <Image fluid src={Loguito} style={{width:"150px"}}/>
           </div>
           <Row className="d-flex flex-column justify-content-center p-5">
             <Col>
@@ -44,7 +44,7 @@ const PageService = ({ authen, setAuthen, usuario }) => {
 
           <Row className="d-flex flex-column justify-content-center p-5 mt-3">
             <Col>
-              <h1 className="text-center textos text-justify">NUESTROS SERVICIOS</h1>
+              <h1 className="text-center textos text-justify">DONDE ESTAMOS</h1>
             </Col>
             <Col className="p-3 text-center font-italic">
               <h4 className="font-weight-light">
@@ -52,154 +52,13 @@ const PageService = ({ authen, setAuthen, usuario }) => {
                 video.
               </h4>
             </Col>
-            <Col>
-              <p className="p-3 text-center text-justify">
-                Reparamos TV,LCD,LED , monitores, DVD, BLU, RAY, Camaras
-                digitales filmadoras, Equipos de audio- minicomponentes, home
-                cinema, PLAY STATION (PS), computadoras , microondas.
-              </p>
-            </Col>
+            
             <Col className="p-2">
-              <Row className="d-flex flex-column flex-md-row">
-                <Col className="p-3">
-                  <Row className="d-flex flex-column justify-content-center align-items-center">
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <i class="fas fa-volume-up fa-5x"></i>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <h4 className="titulo m-3 p-3 text-center text-justify">Audio</h4>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center text-center text-justify">
-                      <p>
-                        Reparamos equipos de audio con y sin garantía. Empleamos
-                        repuestos originales.
-                      </p>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col className="p-3">
-                  <Row className="d-flex flex-column justify-content-center align-items-center">
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <i class="fas fa-tv fa-5x"></i>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <h4 className="titulo m-3 p-3 text-center text-justify">Tv Digital</h4>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center  text-center text-justify">
-                      <p>
-                        Hacemos reparaciones de tv led y lcd, monitores y
-                        computadores.
-                      </p>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col className="p-3">
-                  <Row className="d-flex flex-column justify-content-center align-items-center">
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <i class="far fa-clock fa-5x"></i> <br></br>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <h4 className="titulo m-3 p-3 text-center text-justify">Responsabilidad</h4>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center  text-center text-justify">
-                      <p>
-                        Empleamos los mejores instrumentos de medición
-                        electrónica. Repuestos originales.
-                      </p>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col className="p-3">
-                  <Row className="d-flex flex-column justify-content-center align-items-center">
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <i class=" fas fa-phone fa-5x"></i>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center">
-                      <h4 className="titulo m-3 p-3 text-center text-justify">Soporte</h4>
-                    </Col>
-                    <Col className="d-flex  justify-content-center align-items-center  text-center text-justify">
-                      <p>Ofrecemos garantía escrita de nuestros trabajos.</p>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5795297969553!2d-65.19986228529636!3d-26.821513795866068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c18b83c26c5%3A0x53d23cc8bc68f9e!2sBernardo%20de%20Monteagudo%20747%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1599968230832!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </Col>
           </Row>
 
-          <Row className="d-flex flex-column flex-sm-row justify-content-around align-items-center mb-5 mt-5">
-            <Col xs="auto" className="container-persona">
-              <Image src={Rochy} className="rounded-circle shadow persona" />
-              <div className="nombre-imagen d-flex justify-content-center align-items-center">
-                <p>Rosario Scarlata</p>
-              </div>
-            </Col>
-            <Col xs="auto" className="container-persona">
-              <Image src={Sergio} className="rounded-circle shadow persona" />
-              <div className="nombre-imagen d-flex justify-content-center align-items-center">
-                <p>Sergio Rosales</p>
-              </div>
-            </Col>
-            <Col xs="auto" className="container-persona">
-              <Image src={Nicole} className="rounded-circle shadow persona" />
-              <div className="nombre-imagen d-flex justify-content-center align-items-center">
-                <p> Nicole Romero</p>
-              </div>
-            </Col>
-            <Col xs="auto" className="container-persona">
-              <Image src={Mauricio} className="rounded-circle shadow persona" />
-              <div className="nombre-imagen d-flex justify-content-center align-items-center">
-                <p> Mauricio Draniczarek</p>
-              </div>
-            </Col>
-          </Row>
-          {/* <Row className=" justify-content-xl-center contenedor-persona">
-            <Col xs={12} xl={2} className="contenedorPersona">
-              
-              <div className="persona roundedCircle">
-                
-                <img src={Rochy} className="imagen-pers" alt="photo" />
-                <div className="nombre-imagen">
-                  
-                  <p>Rosario Scarlata</p>
-                </div>
-              </div>
-            </Col>
-
-            <Col xs={12} xl={2}>
-              
-              <div className="persona roundedCircle ">
-                
-                <img alt="photo" src={Sergio} className="imagen-pers" />
-                <div className="nombre-imagen">
-                  
-                  <p>Sergio Rosales</p>
-                </div>
-              </div>
-            </Col>
-
-            <Col xs={12} xl={2}>
-              
-              <div className="persona roundedCircle ">
-                <img alt="photo" src={Nicole} className="imagen-pers" />
-                <div className="nombre-imagen">
-                  
-                  <p>Nicole Romero</p>
-                </div>
-              </div>
-            </Col>
-
-            <Col xs={12} xl={2}>
-              
-              <div className="persona  ">
-                
-                <img alt="photo" src={Mauricio} className="imagen-pers" />
-                <div className="nombre-imagen">
-                  
-                  <p>Mauicio Dranizareck</p>
-                </div>
-              </div>
-            </Col>
-          </Row> */}
+         
         </Container>
       </Container>
       <Footer />

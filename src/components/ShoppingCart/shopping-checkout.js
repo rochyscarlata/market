@@ -75,7 +75,7 @@ const ShoppingCheckout = ({ authen, setAuthen, usuario, userId }) => {
         (subtotal += producto.productoId.precio * producto.cantidadProducto)
     );
     setSubtotal(subtotal);
-    setValorImpuestos(subtotal * 0.21);
+    setValorImpuestos(160);
   };
 
   useEffect(() => {

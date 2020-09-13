@@ -285,7 +285,7 @@ const Mostrador = ({ authen, userId, fetchCarrito }) => {
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item eventKey="todos">Todos</Dropdown.Item>
-                    <Dropdown.Item eventKey="bebidas">
+                    <Dropdown.Item eventKey="bebida">
                       Bebidas
                     </Dropdown.Item>
                     <Dropdown.Item eventKey="monitores">

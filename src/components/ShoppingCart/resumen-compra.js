@@ -7,7 +7,7 @@ import "./styles.css";
 
 const ResumenCompra = ({
   subtotal,
-  valorEnvio,
+  valorEnvio=160,
   valorImpuestos,
   valorDescuento,
   setDescuento,
@@ -93,13 +93,10 @@ const ResumenCompra = ({
               </Row>
             </Col>
             <Col className="mb-2 d-flex justify-content-between">
-              <h5>Impuestos</h5>
+              <h5>Envio</h5>
               <h5>${valorImpuestos.toFixed(2)}</h5>
             </Col>
-            <Col className="mb-3 d-flex justify-content-between">
-              <h5>Envío</h5>
-              <h5>${valorEnvio.toFixed(2)} </h5>
-            </Col>
+           
           </Row>
           <Row className="mt-3">
             <Col className="d-flex justify-content-between">

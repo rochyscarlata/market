@@ -68,10 +68,12 @@ const Main = ({
             <Col>
               <ZeroDisclaimer />
             </Col>
-            <Col id="NewsPanel" className="mb-5">
+            <Col id="NewsPanel" className="mb-1">
               <NewsPanel />
             </Col>
             <Col>
+            <h1 className="text-center">Productos</h1>
+            <br/>
               <Mostrador
                 setProducts={setProducts}
                 products={products}
