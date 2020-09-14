@@ -4,7 +4,7 @@ import LoginContainer from "./LoginContainer";
 import Sidebar from "./Sidebar";
 import Register from "../Register/Register";
 import Doodles from "../Images/various-svg/Doodles.svg";
-import Loguito from "../Images/Zero-Images/Zero-Tech-Black.svg";
+import Loguito from "../Images/sagitariologo.png";
 
 // estilos del componente
 import "./styles.css";
@@ -42,7 +42,7 @@ const Login = () => {
                 id="LoginTitle"
                 className="graphic-font text-center text-justify"
               >
-                GAMING STORE
+                Minimarket Sagitario
               </h1>
             </Col>
           </Row>

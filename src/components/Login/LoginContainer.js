@@ -45,17 +45,17 @@ const LoginConteiner = ({ setAuthen }) => {
   return (
     <Container className="form-login mt-2">
       <Form  onSubmit={handleSubmit(onSubmit)}>
-        <h3 className="text-center text-white">Iniciar Sesión</h3>
+        <h1 className="text-center text-white">Iniciar Sesión</h1>
 
         <br></br>
         <FormControl
-          placeholder="Nombre"
+          placeholder="Usuario"
           autoComplete="off"
           name="username"
           ref={register({
             required: {
               value: true,
-              message: "Nombre es requerido. ",
+              message: "Usuario es requerido. ",
             },
             maxLength: {
               value: 50,
@@ -73,7 +73,7 @@ const LoginConteiner = ({ setAuthen }) => {
 
         <Form.Group>
           <Form.Control
-            placeholder="password"
+            placeholder="Contraseña"
             type="password"
             name="password"
             ref={register({
@@ -96,24 +96,7 @@ const LoginConteiner = ({ setAuthen }) => {
           </span>
         </Form.Group>
 
-        <Form.Group className="btn-redes mb-4">
-          <OverlayTrigger
-            placement="bottom"
-            overlay={<Tooltip id={`tooltip-$'bottom'`}>Ingresar con</Tooltip>}
-          >
-            <Fab color="primary" size="small" aria-label="add">
-              <FaFacebookSquare />
-            </Fab>
-          </OverlayTrigger>{" "}
-          <OverlayTrigger
-            placement="bottom"
-            overlay={<Tooltip id={`tooltip-$'bottom'`}>Ingresar con</Tooltip>}
-          >
-            <Fab color="secondary" size="small" aria-label="edit">
-              <FaGoogle />
-            </Fab>
-          </OverlayTrigger>{" "}
-        </Form.Group>
+       
         <Row className="d-flex justify-content-center mb-3">
           <Button id="BtnLogin" className="btn-lg btn-block btn-login-iniciar w-50 font-weight-bolder shadow" type="submit">
             INGRESAR
