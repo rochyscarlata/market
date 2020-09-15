@@ -115,13 +115,7 @@ const Fotter = () => {
               >
                 <FaCcAmex className="footer-icono w-100 h-100 text-info" />
               </Col>
-              <Col
-                xs="3"
-                md="2"
-                className="d-flex justify-content-center h-100"
-              >
-                <FaCcPaypal className="footer-icono w-100 h-100 text-primary" />
-              </Col>
+             
             </Row>
           </Col>
         </Row>
