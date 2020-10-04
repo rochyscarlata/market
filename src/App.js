@@ -16,7 +16,10 @@ import PrivateRoute from "./components/routes/PrivateRoute";
 import RestrictedRoutes from "./components/routes/RestrictedRoutes";
 import PrivateAdmin from "./components/routes/PrivateAdmin";
 import PaginaCompra from "./components/PaginaDePago/PaginaCompra";
-import FormuDirec from "./components/FormuDirec/FormuDirec"
+import FormuDirec from "./components/FormuDirec/FormuDirec";
+import PagoPendiente from "./components/PaginaDePago/PagoPendiente";
+import PagoExitoso from "./components/PaginaDePago/PagoExitoso";
+import PagoRechazado from "./components/PaginaDePago/PagoRechazado";
 
 function App() {
   const token = localStorage.getItem("Token");
@@ -95,9 +98,16 @@ function App() {
         <PrivateAdmin exact path="/admin">
           <Admin />
         </PrivateAdmin>
-        <Route path="/pago/:id">
-          <Payment />
-        </Route>
+        <Route path="/pagoFallido">
+          <PagoRechazado />
+          </Route>
+          <Route path="/pagoExitoso">
+          <PagoExitoso />
+          </Route>
+          <Route path="/pagoEnProceso">
+          <PagoPendiente />
+          </Route>
+  
         <Route path="/Compra">
           <PaginaCompra />
         </Route>
@@ -111,9 +121,9 @@ function App() {
             usuario={usuario}
           />
         </PrivateRoute>
-        <Route>
+         <Route>
           <Error404 />
-        </Route>
+        </Route> 
       </Switch>
     </Router>
   );

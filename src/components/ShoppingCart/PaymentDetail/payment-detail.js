@@ -33,21 +33,9 @@ let history= useHistory()
 
   //funcion para enviar el formulario de compra
   const Comprar = async(compra) => {
-    const response = await axiosInstance.post("/venta",compra);
-    const { _id, estadoVenta} = response.data;
-    console.log(_id)
-    console.log(estadoVenta)
-    
-if(estadoVenta=== "exitoso") {
-  if (_id) {
-    history.push(`/pago/${_id}`)
-   return
-  }
-    }   else if (estadoVenta=== "rechazado") {
-      history.push(`/pago/${estadoVenta}`)
-      return 
-    }
-  
+     const response = await axiosInstance.post("/venta",compra);
+     window.location= response.data.redirectUrl
+   
   }
 
 
