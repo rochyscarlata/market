@@ -23,7 +23,7 @@ const Admin = () => {
 
   const cerrarSes = () => {
     localStorage.removeItem("Token");
-    history.push("/main");
+    history.push("/");
   };
 
   const mostrarCuerpo = () => {
@@ -31,8 +31,6 @@ const Admin = () => {
       return <Graficos />;
     } else if (cuerpo === "Nuevo producto") {
       return <AgregProd />;
-    } else if (cuerpo === "TurnosPanel") {
-      return <TurnosPanel />;
     } else if (cuerpo === "Usuarios") {
       return <Usuarios />;
     } else if (cuerpo === "Ventas") {
@@ -53,7 +51,7 @@ const Admin = () => {
             <br />
             <nav class="main-menu">
               <h2 style={{ color: "white", textAlign: "center" }}>
-                Zero Technology
+                Minimarket Sagitario
               </h2>
               <br />
               <ul style={{ marginLeft: "15px" }}>

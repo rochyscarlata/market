@@ -24,6 +24,7 @@ const LoginConteiner = ({ setAuthen }) => {
   const onSubmit = async (data, e) => {
     const { username, password } = data;
 
+    
     if (password) {
       const newUser = {
         username,
@@ -38,6 +39,7 @@ const LoginConteiner = ({ setAuthen }) => {
         swal("Error", "Usuario o contraseña incorrecta.", "error");
       }
     }
+
 
     e.target.reset();
   };
