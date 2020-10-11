@@ -86,7 +86,7 @@ const NewsPanel = () => {
           <Col className="p-5">
             <Row className="d-flex flex-column">
               <Col className="mb-2">
-                <Row className="d-flex flex-column align-items-center justify-content-center p-5">
+                <Row className="d-flex flex-column align-items-center justify-content-center p-3">
                   <Col className="d-flex justify-content-center text-uppercase text-nowrap mb-2">
                     <h3
                       id="news-title"
@@ -98,23 +98,18 @@ const NewsPanel = () => {
                     </h3>
                   </Col>
                   <Col className="d-flex justify-content-center align-items-center">
-                    {/* <Image
-                      fluid
-                      id="news-image-small"
-                      className="shadow rounded mb-4"
-                      src={noticia.imagen}
-                    /> */}
+                   
                   </Col>
                   <Col className="text-dark text-justify mb-4">
                     <Row className="d-flex flex-column">
                       <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h5 className="text-dark font-weight">
+                        <h5 className="info2 text-dark font-weight">
                         PRODUCTOS DE VENTA AL PESO <br></br>
                       Los productos de venta al peso como los fiambres tienen publicado el precio por cada 100 gramos.
                        Si carga al carrito 3 cantidades estará recibiendo 300 gramos del producto seleccionado.<br></br>
                       
                         </h5>
-                        <h5 className="font-weight">
+                        <h5 className="info2 font-weight">
                         VENCIMIENTO EN LÁCTEOS <br></br>
                       Los lácteos poseen fecha de vencimiento de 10 a 15 días, los mismos serán enviados dentro dicho rango.
                       Cadena de frío en la entrega

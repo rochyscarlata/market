@@ -286,14 +286,16 @@ const Mostrador = ({ authen, userId, fetchCarrito }) => {
                   <Dropdown.Menu>
                     <Dropdown.Item eventKey="todos">Todos</Dropdown.Item>
                     <Dropdown.Item eventKey="bebida">
-                      Bebidas
+                    Almacén
                     </Dropdown.Item>
                     <Dropdown.Item eventKey="monitores">
-                      Monitores
+                    Limpieza
                     </Dropdown.Item>
-                    <Dropdown.Item eventKey="mouse">Mouse</Dropdown.Item>
-                    <Dropdown.Item eventKey="sillas">Sillas</Dropdown.Item>
-                    <Dropdown.Item eventKey="teclados">Teclados</Dropdown.Item>
+                    <Dropdown.Item eventKey="mouse">Lacteos</Dropdown.Item>
+                    <Dropdown.Item eventKey="sillas">Fiambrería</Dropdown.Item>
+                    <Dropdown.Item eventKey="teclados">Snaks</Dropdown.Item>
+                    <Dropdown.Item eventKey="teclados">Panadería</Dropdown.Item>
+                    <Dropdown.Item eventKey="teclados">Golosinas</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Col>

@@ -19,8 +19,8 @@ const Example = () => {
           </Modal.Header>
           <Modal.Body>  
                     <h6>
-                        ENVÍOS <br></br>
-                          Podes comprar todos los días año durante las 24 hs.
+                      
+                          Podes comprar todos los días del año durante las 24 hs.
                           El monto mínimo de compra es de $1000.<br></br>
                           Los envíos se realizan de lunes a sábados, en la franja horaria de 18 a 22 hs. <br></br>
                           Las compras ingresadas hasta las 18 hs serán enviadas el mismo día. <br></br>

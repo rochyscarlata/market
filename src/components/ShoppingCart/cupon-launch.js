@@ -46,16 +46,7 @@ function CuponModal({ setDescuento, subtotal, setDetalleCupon,detalleCupon,hayCu
 
   return (
     <Fragment>
-      <Button
-        disabled={hayCupon || subtotal === 0}
-        variant="outline-danger"
-        className="cupon shadow-sm"
-        onClick={() => setMostrarModal(true)}
-        size="md"
-      >
-        {" "}
-        <h6 className="mt-2">CANJEAR CUPÓN</h6>
-      </Button>
+      
       <Modal
         ref={Modal}
         size="lg"
