@@ -60,8 +60,8 @@ const PerfilUsuario = ({authen, setAuthen, usuario}) => {
           </Row>
         </div>
         <div className="p-3">
-          <h2 className="comprasRe">Compras realizadas</h2>
-          <Table striped bordered hover variant="dark" className="shadow">
+          {/* <h2 className="comprasRe">Compras realizadas</h2> */}
+          {/* <Table striped bordered hover variant="dark" className="shadow">
             <thead>
               <tr>
                
@@ -75,7 +75,7 @@ const PerfilUsuario = ({authen, setAuthen, usuario}) => {
             {ventas.map((venta, index) =>(
                <tr>
                 <td>{Fecha(venta.creado)}</td>
-            <td>{venta.productos.map((p)=><>•{p.nombre} <br/></>)}</td>
+            <td>{venta.productos.map((p)=><>{p.nombre} <br/></>)}</td>
             <td>{venta.productos.map((p)=><>{p.cantidad} <br/></>)}</td>
               <td>{venta.total}</td>
              </tr>
@@ -84,7 +84,7 @@ const PerfilUsuario = ({authen, setAuthen, usuario}) => {
              
               
             </tbody>
-          </Table>
+          </Table> */}
         </div>
       </Container>
     </>

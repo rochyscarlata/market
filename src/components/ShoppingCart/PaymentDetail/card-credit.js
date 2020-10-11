@@ -27,7 +27,7 @@ const cargarDatosTarjeta = (e) => {
 }
   return (
     <Fragment>
-      <Card
+      {/* <Card
         onClick={onClick}
         className={
           seleccionado
@@ -55,8 +55,8 @@ const cargarDatosTarjeta = (e) => {
             ) : null}
 
             <Col>
-              <Row className="d-flex flex-column mt-3 mb-3">
-                <Col>
+              <Row className="d-flex flex-column mt-3 mb-3"> */}
+                {/* <Col>
                   <Row>
                     <Col className="mt-2" xs="auto">
                       <Form.Check
@@ -81,8 +81,8 @@ const cargarDatosTarjeta = (e) => {
                       </Card.Title>
                     </Col>
                   </Row>
-                </Col>
-                <Col>
+                </Col> */}
+                {/* <Col>
                   <Form>
                     <Row className="d-flex flex-column">
                       <Col className="mb-3 mt-2">
@@ -210,7 +210,8 @@ const cargarDatosTarjeta = (e) => {
           </Row>
         </Container>
       </Card>
-    </Fragment>
+    </Fragment> */}
+    </Fragment> 
   );
 };
 
