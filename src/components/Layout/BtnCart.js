@@ -142,15 +142,13 @@ const BtnCart = ({ products, setCarrito, userId, fetchCarrito, authen }) => {
                         className="d-flex justify-content-center align-items-center border-right"
                         xs={4}
                       >
-                        {!loaderCart ? (
+                       
                           <Image
                             fluid
                             src={product.productoId.imagen[0]}
                             className="imgCartBtn"
                           />
-                        ) : (
-                          <Spinner animation="border" variant="dark" />
-                        )}
+                     
                       </Col>
                       <Col
                         className="d-flex justify-content-center align-items-center text-center text-justify border-right"
